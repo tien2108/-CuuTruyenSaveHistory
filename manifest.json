@@ -13,9 +13,9 @@
 	},
 	"content_scripts": [
 		{
-			"matches": ["https://cuutruyen.net/*"],
+			"matches": ["https://cuutruyent9sv7.xyz/*"],
 			"js": ["./index.js"]
 		}
 	],
-	"host_permissions": ["https://cuutruyen.net/*"]
+	"host_permissions": ["https://cuutruyent9sv7.xyz/*"]
 }
