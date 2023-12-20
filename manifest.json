@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "Cửu Truyện - Lưu Lịch Sử",
+	"description": "Tạo bởi HuyHoangg",
+	"version": "1.0",
+	"action": {
+		"default_popup": "./popup.html",
+		"default_icon": "./public/logo.png"
+	},
+	"permissions": ["activeTab", "storage", "tabs", "cookies"],
+	"background": {
+		"service_worker": "./background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://cuutruyen.net/*"],
+			"js": ["./index.js"]
+		}
+	],
+	"host_permissions": ["https://cuutruyen.net/*"]
+}
